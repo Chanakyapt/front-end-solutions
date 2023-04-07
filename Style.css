@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: F001;
+    src: url(Outfit-VariableFont_wght.ttf);
+  }
+  
+.wrapper {
+    --_padding: 1rem;
+    --_gap: 1rem;
+    --_radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background-color: hsl(212, 45%, 89%);
+    gap: calc(var(--_gap)*5);
+}
+.wrapper > * {
+    align-self: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap:calc(var(--_gap));
+    width: 19rem;
+    padding: var(--_padding);
+    padding-bottom: calc(var(--_padding)*3);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: var(--_radius);
+    font-family: F001;
+    text-align: center;
+    isolation: isolate;
+}
+.i1 {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: calc(var(--_radius) / 2);
+}
+.row1 {
+    color: hsl(218, 44%, 22%);
+    font-size: 13px;
+}
+.row2 {
+    color: hsl(220, 15%, 55%);
+    font-size: 19px;
+}
